@@ -1,0 +1,23 @@
+#################################
+###                           ###
+###          HALLWAY          ###
+###                           ###
+#################################
+
+#################################
+###         NIGHT MODE        ###
+#################################
+  - alias: Hallway Motion On
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001e5226b
+      to: 'on'
+    action:
+      - service: script.turn_on
+        entity_id: script.night_scene
+        data:
+          variables:
+            scene: 'scene.hall_dim'
+            off_script: 'script.night_hallway_timer_off'
+            
+

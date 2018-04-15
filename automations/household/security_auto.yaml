@@ -1,0 +1,16 @@
+  - alias: MM Door Bell
+    trigger:
+      platform: event
+      event_type: click
+      event_data:
+        entity_id: binary_sensor.switch_158d000187075e
+        click_type: single
+    action:
+      - service: script.turn_on
+        entity_id: script.notify_all
+        data:
+          variables:
+            title: 'MM Door Bell'
+            message: 'Someone is at the door!'
+            
+            

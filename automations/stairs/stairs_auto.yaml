@@ -1,0 +1,27 @@
+#################################
+###                           ###
+###         STAIRWELL         ###
+###                           ###
+#################################
+
+#################################
+###         NIGHT MODE        ###
+#################################
+  - alias: Stairway Motion On
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_sensor_158d0002236a55
+      to: 'on'
+    action:
+      - service: script.turn_on
+        entity_id: script.night_scene
+        data:
+          variables:
+            scene: 'scene.stairway_dim'
+            off_script: 'script.night_stairway_timer_off'
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'MM Hallway Motion'
+            message: 'Someone is in the hallway'

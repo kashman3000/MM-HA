@@ -1,0 +1,51 @@
+  - name: hall_dim
+    entities:
+      light.hallway_1:
+        state: on
+        transition: 1
+        brightness: 1
+        xy_color: [ 0.5926, 0.3814 ]
+      light.hallway_2:
+        state: on
+        transition: 1
+        brightness: 1
+        xy_color: [ 0.5926, 0.3814 ]
+        
+  - name: hall_normal
+    entities:
+      light.hallway_1:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.4448, 0.4066 ]
+      light.hallway_2:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.4448, 0.4066 ]
+        
+  - name: stairway_dim
+    entities:
+      light.stairway_1:
+        state: on
+        transition: 1
+        brightness: 1
+        xy_color: [ 0.5926, 0.3814 ]
+      # light.stairway_2:
+        # state: on
+        # transition: 1
+        # brightness: 1
+        # xy_color: [ 0.5926, 0.3814 ]
+        
+  - name: stairway_normal
+    entities:
+      light.stairway_1:
+        state: on
+        transition: 2
+        brightness: 150
+        xy_color: [ 0.4448, 0.4066 ]
+      # light.stairway_2:
+        # state: on
+        # transition: 2
+        # brightness: 150
+        # xy_color: [ 0.4448, 0.4066 ]

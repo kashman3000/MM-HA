@@ -1,0 +1,78 @@
+#################################
+###         NIGHT MODE        ###
+#################################
+  - alias: Turn Night Mode On
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'below_horizon'
+    action:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.mode_night
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'MM Night Mode On'
+            message: 'Testing the trigger'
+        
+  - alias: Turn Night Mode Off
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'above_horizon'
+    action:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.mode_night
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'MM Night Mode Off'
+            message: 'Testing the trigger'
+            
+#################################
+###         SLEEP MODE        ###
+#################################
+  - alias: Turn Sleep Mode On
+    trigger:
+      platform: time
+      at: '20:00:00'
+    action:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.mode_sleep
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'MM Sleep Mode On'
+            message: 'Testing the trigger'
+        
+  - alias: Turn Sleep Mode Off
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'above_horizon'
+    action:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.mode_sleep
+      - service: script.turn_on
+        entity_id: script.notify_james
+        data:
+          variables:
+            title: 'MM Sleep Mode Off'
+            message: 'Testing the trigger'
+            
+#################################
+###      RESET BUTTONS        ###
+#################################
+
+  - alias: Reset morning at 4am
+    trigger:
+      platform: time
+      at: '04:00:00'
+    action:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.morning_first
+
+

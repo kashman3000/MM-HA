@@ -1,0 +1,58 @@
+#################################
+###    TEMPLATE SCENES        ###
+#################################
+#Run a night light scene if people are home and it is dark   
+  night_scene:
+    sequence:
+      - condition: state
+        entity_id: input_boolean.mode_night
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'off'
+      - service: script.turn_off
+        data_template:
+           entity_id: "{{ off_script }}"
+      - service: scene.turn_on
+        data_template:
+          entity_id: "{{ scene }}"
+      - service: script.turn_on
+        data_template:
+           entity_id: "{{ off_script }}"
+           
+           
+#################################
+###    TIMED OFF SCRIPTS      ###
+#################################
+       
+  night_hallway_timer_off:
+    alias: "Turn off triggered night light after 1 minutes"
+    sequence:
+      - delay:
+          minutes: 1
+      - service: light.turn_off
+        data:
+          entity_id: light.hallway
+          
+  night_upstairs_hallway_timer_off:
+    alias: "Turn off triggered night light after 1 minutes"
+    sequence:
+      - delay:
+          minutes: 2
+      - service: light.turn_off
+        data:
+          entity_id: light.upstairs_hallway
+          
+  night_stairway_timer_off:
+    alias: "Turn off triggered night light after 1 minutes"
+    sequence:
+      - delay:
+          minutes: 1
+      - service: light.turn_off
+        data:
+          entity_id: light.stairway_1
+
+      # - service: light.turn_off
+        # data:
+          # entity_id: light.stairway_2
+

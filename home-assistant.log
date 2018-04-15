@@ -1,0 +1,69 @@
+2018-04-15 00:02:00 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=79 from 2018-04-07 10:29:41.659222)
+2018-04-15 00:02:07 ERROR (SyncWorker_5) [homeassistant.components.weather.bom] Could not get BOM weather station from lat/lon
+2018-04-15 00:02:53 WARNING (MainThread) [homeassistant.setup] Setup of wemo is taking over 10 seconds.
+2018-04-15 00:05:27 WARNING (MainThread) [homeassistant.components.script] Script script.notify_james already running.
+2018-04-15 02:34:02 WARNING (Thread-3) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2018-04-15 02:34:17 ERROR (Thread-3) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2018-04-15 06:17:33 WARNING (MainThread) [homeassistant.components.script] Script script.notify_james already running.
+2018-04-15 10:05:33 ERROR (MainThread) [homeassistant.core] Error executing service <ServiceCall notify.jamespb: title=<homeassistant.helpers.template.Template object at 0x7021f170>, message=<homeassistant.helpers.template.Template object at 0x7021f6b0>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/usr/lib/python3.6/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Try again
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3.6/site-packages/urllib3/connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.6/site-packages/urllib3/connection.py", line 150, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x736cdc10>: Failed to establish a new connection: [Errno -3] Try again
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/usr/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/usr/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.pushbullet.com', port=443): Max retries exceeded with url: /v2/pushes (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x736cdc10>: Failed to establish a new connection: [Errno -3] Try again',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/homeassistant/core.py", line 1002, in _event_to_service_call
+    await service_handler.func(service_call)
+  File "/usr/lib/python3.6/site-packages/homeassistant/components/notify/__init__.py", line 137, in async_notify_message
+    yield from notify_service.async_send_message(**kwargs)
+  File "/usr/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.6/site-packages/homeassistant/components/notify/pushbullet.py", line 90, in send_message
+    self._push_data(message, title, data, self.pushbullet)
+  File "/usr/lib/python3.6/site-packages/homeassistant/components/notify/pushbullet.py", line 170, in _push_data
+    pusher.push_note(title, message, **email_kwargs)
+  File "/usr/lib/python3.6/site-packages/pushbullet/pushbullet.py", line 286, in push_note
+    return self._push(data)
+  File "/usr/lib/python3.6/site-packages/pushbullet/pushbullet.py", line 304, in _push
+    r = self._session.post(self.PUSH_URL, data=json.dumps(data))
+  File "/usr/lib/python3.6/site-packages/requests/sessions.py", line 555, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/usr/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.6/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.pushbullet.com', port=443): Max retries exceeded with url: /v2/pushes (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x736cdc10>: Failed to establish a new connection: [Errno -3] Try again',))

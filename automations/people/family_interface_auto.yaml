@@ -1,0 +1,57 @@
+#################################
+###          FAMILY           ###
+#################################
+          
+### GUY       
+  - id: guy_not_home
+    alias: Guy not home
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.guy_status
+        to: 'off'
+    action:
+      - service: group.set_visibility
+        entity_id: group.guy
+        data:
+          visible: False
+            
+  - id: guy_home
+    alias: Guy home
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.guy_status
+        to: 'on'
+      - platform: homeassistant
+        event: start
+    action:
+      - service: group.set_visibility
+        entity_id: group.guy
+        data:
+           visible: True
+           
+### GUY       
+  - id: cathy_not_home
+    alias: Cathy not home
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.cathy_status
+        to: 'off'
+    action:
+      - service: group.set_visibility
+        entity_id: group.cathy
+        data:
+          visible: False
+            
+  - id: cathy_home
+    alias: Cathy home
+    trigger:
+      - platform: state
+        entity_id: binary_sensor.cathy_status
+        to: 'on'
+      - platform: homeassistant
+        event: start
+    action:
+      - service: group.set_visibility
+        entity_id: group.cathy
+        data:
+           visible: True

@@ -1,0 +1,93 @@
+### MISC
+  light.gateway_light_286c0785f3ec:
+    friendly_name: Hallway gateway
+
+### DOOR SENSORS
+  binary_sensor.door_window_sensor_158d0001833cb2:
+    friendly_name: Front Door
+    icon: mdi:glassdoor
+  binary_sensor.door_window_sensor_158d0001876669:
+    friendly_name: Balcony Door
+    icon: mdi:glassdoor
+  binary_sensor.door_window_sensor_158d0001de5d8a:
+    friendly_name: Laundry Door
+    icon: mdi:glassdoor
+    
+##POWER PLUGS  
+  switch.plug_158d000103128c:
+    friendly_name: Family Room Lamp 2
+    icon: mdi:power-plug
+  switch.plug_158d0001032eed:
+    friendly_name: Dining Room Radio
+    icon: mdi:power-plug
+  switch.plug_158d0001dae60a:
+    friendly_name: Office Lamp
+    icon: mdi:power-plug
+  switch.plug_158d0001ded208:
+    friendly_name: Mum Bedside
+    icon: mdi:power-plug    
+  switch.plug_158d0001e19d24:
+    friendly_name: Bedroom TV
+    icon: mdi:power-plug    
+  switch.plug_158d0001fa27b1:
+    friendly_name: Family Room TV
+    icon: mdi:power-plug    
+    
+### BUTTONS
+  binary_sensor.switch_158d00012967ff:
+    friendly_name: General Switch
+  binary_sensor.switch_158d000187075e:
+    friendly_name: Door Bell
+
+### MOTION SENSORS
+  binary_sensor.motion_sensor_158d0001e5226b:
+    friendly_name: Hallway Motion
+  binary_sensor.motion_sensor_158d0001e53b7d:
+    friendly_name: Up-stairs Motion    
+  binary_sensor.motion_sensor_158d0002236a55:
+    friendly_name: Stairwell Motion    
+  binary_sensor.motion_sensor_158d000224f5a5:
+    friendly_name: Family Room Motion
+    
+### ILLUMINATION SENSORS
+  sensor.illumination_158d0001e5226b:
+    friendly_name: Hallway illumination
+  sensor.illumination_158d0001e53b7d:
+    friendly_name: Up-Stairs illumination
+  sensor.illumination_158d0002236a55:
+    friendly_name: Stairwell illumination
+  sensor.illumination_158d000224f5a5:
+    friendly_name: Family room illumination
+  sensor.illumination_286c0785f3ec:
+    friendly_name: Gateway light
+
+### SWITCHES
+  switch.mt_m_living_room_light:
+    homebridge_name: Dining Room Light
+  switch.wall_switch_left_158d00016d97cf:
+    friendly_name: Eating Light
+  switch.wall_switch_right_158d00016d97cf:
+    friendly_name: Dining Table Light
+
+  
+### TEMP SENSORS
+  sensor.temperature_158d0001f536a4:
+    friendly_name: Bedroom Temperature
+  sensor.humidity_158d0001f536a4:
+    friendly_name: Bedroom Humidty
+    icon: mdi:water
+  sensor.temperature_158d0001fa9829:
+    friendly_name: Office Temperature
+  sensor.humidity_158d0001fa9829:
+    friendly_name: Office Humidty
+    icon: mdi:water
+  sensor.temperature_158d0001fa9d44:
+    friendly_name: Living Room Temperature
+  sensor.humidity_158d0001fa9d44:
+    friendly_name: Living Room Humidty
+    icon: mdi:water
+  sensor.temperature_158d000201831b:
+    friendly_name: Family Room Temperature
+  sensor.humidity_158d000201831b:
+    friendly_name: Family Room Humidty
+    icon: mdi:water
