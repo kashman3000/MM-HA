@@ -30,6 +30,7 @@ http:
   ip_ban_enabled: True
   login_attempts_threshold: 2
 
+
 # Checks for available updates
 # Note: This component will send some information about your system to
 # the developers to assist with development of Home Assistant.
@@ -43,7 +44,7 @@ updater:
 discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+#conversation:
 
 # Enables support for tracking state changes over time
 history:
@@ -70,25 +71,29 @@ recorder:
 sun:
 
 # HOME ALARM PANEL
-alarm_control_panel:
-  - platform: manual
-    name: House Alarm
-    code: !secret alarm
-    pending_time: 30
-    delay_time: 30
-    trigger_time: 4
-    disarmed:
-      trigger_time: 0
-    armed_home:
-      pending_time: 0
-      delay_time: 0
+#alarm_control_panel:
+#  - platform: manual
+#    name: House Alarm
+#    code: !secret alarm
+#    pending_time: 30
+#    delay_time: 30
+#    trigger_time: 4
+#    disarmed:
+#      trigger_time: 0
+#    armed_home:
+#      pending_time: 0
+#      delay_time: 0
 
 #XIAOMI
 xiaomi_aqara:
   gateways:
     - key: !secret xiamo_key
       mac: !secret xiamo_mac
-      
+
+hue:
+  bridges:
+    - host: 192.168.86.39
+      allow_unreachable: true
       
 notify:
   - name: guypb
@@ -103,17 +108,19 @@ notify:
 
 # Weather prediction
  
-weather:
-  - platform: bom
+#weather:
+ # - platform: bom
 
 # Text to speech
 tts:
   - platform: google
 
 group: !include groups.yaml
+input_number: !include input_number.yaml
 automation: !include_dir_merge_list automations/
 script: !include_dir_merge_named scripts/
-sensor: !include_dir_merge_named sensors/
+sensor: !include_dir_merge_list sensors/
 input_boolean: !include_dir_merge_named input_booleans/
 binary_sensor: !include_dir_merge_named binary_sensors/
 scene: !include scenes.yaml
+input_select: !include input_select.yaml

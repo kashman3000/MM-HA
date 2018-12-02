@@ -1,0 +1,196 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "jamesjameskj"
+                },
+                "id": "801022356f4e40ae9b556da37cbac4ef",
+                "user_id": "583cbe70f31c4d079f1ed2bce0dea187"
+            },
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "legacy_api_password",
+                "data": {},
+                "id": "24ab9ef2d4c94deb94debbe9fe928e93",
+                "user_id": "1d4299c864ff4386979cc1e7e190e21f"
+            }
+        ],
+        "groups": [
+            {
+                "id": "71888d8174c9432a92ceeb047a9b3240",
+                "name": "All Access"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": null,
+                "client_name": null,
+                "created_at": "2018-10-26T22:53:15.270259+00:00",
+                "id": "83cd5bfe5be04680ad7886fab30576aa",
+                "jwt_key": "79caf41c7b4bbb506e7e67d94059bd4c03b6383798a12502b0c0a60a129d7ab123866a33d906ed17c0287b136174fcd7d97fb424416f45c96ffea4eb825ce339",
+                "last_used_at": "2018-12-02T21:57:25.592199+00:00",
+                "last_used_ip": "172.30.32.2",
+                "token": "4fe9e4db861de8c0eda9677f8d1a2c2a96ee105289d895ce0b0e424c0c3dc49b6b8f4cc4db5de5c5fb5bb85c0856f02692644f5b31e8cf8ea09979fcb1d27cf6",
+                "token_type": "system",
+                "user_id": "b5cc631653c447cbaad2d21faffb9a5e"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://mm-ha.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2018-10-27T00:03:52.203233+00:00",
+                "id": "a400545e27ff444bb61bceb74e31d102",
+                "jwt_key": "50897037475fb9c8c8a249db47d00d79a82bb61603cb62c10fd154b817197b5704e78b980b55d5d20931ef7afc521c84ce5640911389697c03defe3013182eb5",
+                "last_used_at": "2018-10-27T00:03:52.203850+00:00",
+                "last_used_ip": "59.102.33.254",
+                "token": "7688f89a47c4fadd1d0061c02bf0f7ab73c671ea67a7a056576a2778701e7cdaef3b097378fbda1f9802f92a50972bcc5df6472974fa3141f14b6885a71358b6",
+                "token_type": "normal",
+                "user_id": "1d4299c864ff4386979cc1e7e190e21f"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://mm-ha.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2018-10-27T00:14:31.304594+00:00",
+                "id": "55c901d2373a4ec09ad7eab9f983ab81",
+                "jwt_key": "13a33cde35f388c49df8675cece421748dc1a323adcef80f023da6779b1bbe4e92edb389f7fb435ba4311bef0f589f01ef28a5cd5b1c500dd0803a754280cc15",
+                "last_used_at": "2018-10-27T00:14:31.305990+00:00",
+                "last_used_ip": "59.102.33.254",
+                "token": "8442d3645d964ea002c8ac1b9ab87289befb6c2b814ec8a7c30f73a61c31fd3ea375740689fa26c60869138eb128076ae74094fca9ebb0aaca4cbf88b44e31f7",
+                "token_type": "normal",
+                "user_id": "1d4299c864ff4386979cc1e7e190e21f"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.86.26:8123/",
+                "client_name": null,
+                "created_at": "2018-10-27T06:31:32.911624+00:00",
+                "id": "a2421a9b178d4fd1a0cb96f004f6ca9a",
+                "jwt_key": "ca5ead0379c148145821225665565c0890f62002f6759f19416d282c693328dc8a7d3e67b54371425c3c93490902ae27e4962ea40eb0a7727853361d552958fe",
+                "last_used_at": "2018-12-01T09:55:39.125404+00:00",
+                "last_used_ip": "192.168.86.68",
+                "token": "29d68a1a3f8b18c355dc584ac8853964382cf82934a8398fef5d227c3a5824a39fda0e8892064b567151feac381d2f6bbbb6968aa2b221dcba92f1f33730826b",
+                "token_type": "normal",
+                "user_id": "1d4299c864ff4386979cc1e7e190e21f"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.86.26:8123/",
+                "client_name": null,
+                "created_at": "2018-10-27T06:32:49.214517+00:00",
+                "id": "fc521323917342d9b15e909f321f8e22",
+                "jwt_key": "37e2aea597156aea0424846ab9e66d38c67242b7f94af7390583b55ef8522171ab546e07800cf3185a2423f349c3c5c9a9b593af8f1f697f6a485ae49611fdb3",
+                "last_used_at": "2018-12-01T21:32:55.890256+00:00",
+                "last_used_ip": "192.168.86.67",
+                "token": "54469ad61e1ee2dea915b6290dabbd04301884892da110abd1a3ce0ae392d1c2e81d1036356024e3dacbe644c6360b185525728a7d01b279ba9367556af0828a",
+                "token_type": "normal",
+                "user_id": "1d4299c864ff4386979cc1e7e190e21f"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://192.168.86.26:8123/",
+                "client_name": null,
+                "created_at": "2018-11-02T10:21:22.325180+00:00",
+                "id": "3c55b4058a614d419b97e814367b3166",
+                "jwt_key": "179028196fe8efc4bd6e49baff3efdf97773da15432c46ded8600536cdfe81ae998715e4463853ffe21e38a87bea59f7770fe38336f0038700f7720600efc77b",
+                "last_used_at": "2018-11-04T00:27:59.190249+00:00",
+                "last_used_ip": "192.168.86.72",
+                "token": "8e8504e456a7656860460f29a6bd3b31ea4a1d40b7f7e4e4d69fa19bbf6c0d42d39cb5cc2b2b53aded375b113be7fa8cf78269593ff68b1518a25d0398a030cd",
+                "token_type": "normal",
+                "user_id": "1d4299c864ff4386979cc1e7e190e21f"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://mm-ha.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2018-11-17T00:30:40.073070+00:00",
+                "id": "0bfd3bc6c7b1473896e08baaf72faed7",
+                "jwt_key": "0f84bf9b0df8a52bbd1c0aa49a84e45a0570a660be4710ed474188587f9c10b1158cd64515a9a33a6189f16e095437bbcf2c25247d056b519ff53cfc1617b24a",
+                "last_used_at": "2018-11-17T00:30:40.073658+00:00",
+                "last_used_ip": "59.102.33.254",
+                "token": "eddae45f2201ae34eccffe4c8940172d283d49cc1ea9994fcf3df77bd11c13880ad2d13eccf22a5c6396585e1b73fbe842d51d901536d127454d589a260a4423",
+                "token_type": "normal",
+                "user_id": "1d4299c864ff4386979cc1e7e190e21f"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://mm-ha.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2018-12-01T17:01:34.258480+00:00",
+                "id": "a61ab3e9a51c470d87731ac2e73e7d5d",
+                "jwt_key": "fbad8d83d416b5e7bab64d56edf21adc9d4c94513b9abce4b53835a1989a019dd3bea1e38455c779e8a0d1ca8b11965269f592467b6c543987cd5e70949515f2",
+                "last_used_at": "2018-12-01T17:01:34.259064+00:00",
+                "last_used_ip": "59.102.33.254",
+                "token": "6608bc6c3e49da272d789df8d8d9ede68cddbe774620a5205be8485e0b451d373a221b034fbfe755b5e5652c685043cd54e9c9d4f869fb7e078cba65db02e905",
+                "token_type": "normal",
+                "user_id": "1d4299c864ff4386979cc1e7e190e21f"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://mm-ha.duckdns.org:8123/",
+                "client_name": null,
+                "created_at": "2018-12-02T06:51:16.298743+00:00",
+                "id": "c2e2146a0a274cd684fca29730a7c940",
+                "jwt_key": "1393f339e55c14b151d74ad70efb2b9b66296c70458f7b97411417b7268058e1829c3d3683dfa099bf7933541f2f7d1e02c1f5323d04a260cc72fd75e1e82a63",
+                "last_used_at": "2018-12-02T22:17:01.952908+00:00",
+                "last_used_ip": "59.102.33.254",
+                "token": "1ba9d9fda4839da77c1159d54f40c32be8b0bf9f158e13dee5438e96e438737aba71a8a0963dc6e4a649e3330dedb0bc0b7ce8bcba4d329f03ac8f7c8cdbbd52",
+                "token_type": "normal",
+                "user_id": "1d4299c864ff4386979cc1e7e190e21f"
+            }
+        ],
+        "users": [
+            {
+                "group_ids": [],
+                "id": "b07aecf500da489a9e74c5ee9ac54dc3",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Hass.io",
+                "system_generated": true
+            },
+            {
+                "group_ids": [],
+                "id": "b5cc631653c447cbaad2d21faffb9a5e",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Hass.io",
+                "system_generated": true
+            },
+            {
+                "group_ids": [
+                    "71888d8174c9432a92ceeb047a9b3240"
+                ],
+                "id": "583cbe70f31c4d079f1ed2bce0dea187",
+                "is_active": true,
+                "is_owner": true,
+                "name": "James",
+                "system_generated": false
+            },
+            {
+                "group_ids": [
+                    "71888d8174c9432a92ceeb047a9b3240"
+                ],
+                "id": "1d4299c864ff4386979cc1e7e190e21f",
+                "is_active": true,
+                "is_owner": false,
+                "name": "Legacy API password user",
+                "system_generated": false
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

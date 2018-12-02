@@ -1,0 +1,530 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "817416aac47249728631bdbd02344964",
+                "disabled_by": null,
+                "entity_id": "light.family_lamp",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:31:2b:fa-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "ac7b5cee9e6f4854ad485465ca50117e",
+                "disabled_by": null,
+                "entity_id": "light.hallway_2",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:0a:d3:47-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "b869626d517f49d0b25895d28dbc33cf",
+                "disabled_by": null,
+                "entity_id": "light.family_front_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:0b:1c:7a-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "119d92a8abb24dcab3139e55cf2da23d",
+                "disabled_by": null,
+                "entity_id": "light.dining_room",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:10:28:8d:05-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "fdaa5e3cc78d473fac6be30226b2d7db",
+                "disabled_by": null,
+                "entity_id": "light.stairway_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:0b:1b:fc-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "418c9d0ec1084fe8a7ced34a987e9c0b",
+                "disabled_by": null,
+                "entity_id": "light.family_back_2",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:0b:1b:23-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "2f467055852e426b9e9ec3dac339eda9",
+                "disabled_by": null,
+                "entity_id": "light.upstairs_hallway",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:31:21:64-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "8e4384f33ce8401e96df5635567e532c",
+                "disabled_by": null,
+                "entity_id": "light.family_back_3",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:0b:1d:0a-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "a1a0b0f660724137805929a26eb8bff0",
+                "disabled_by": null,
+                "entity_id": "light.hallway_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:10:28:8d:15-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "48f9f5bf844548aa878383a307e9b8e2",
+                "disabled_by": null,
+                "entity_id": "light.family_front_2",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:0b:1c:70-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "b84139e5058a4748bef7fa9aea87f1e0",
+                "disabled_by": null,
+                "entity_id": "light.family_front_3",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:0b:1b:fb-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "6eb6a9e5839c4ca79771e1aab21f2cae",
+                "disabled_by": null,
+                "entity_id": "light.family_back_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:0b:1d:0f-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "ab0090285a144644952489f38a1dc8b9",
+                "disabled_by": null,
+                "entity_id": "light.dining_lamp",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:30:a1:7e-0b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.mt_m_living_room_light",
+                "name": null,
+                "platform": "wemo",
+                "unique_id": "221324K1300433"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.switch_158d00012967ff",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d00012967ff"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d0001833cb2",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001833cb2"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d0001876669",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001876669"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d000224f5a5",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d000224f5a5"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.switch_158d000187075e",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d000187075e"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d0001e5226b",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001e5226b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d0002236a55",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0002236a55"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d0001e53b7d",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001e53b7d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.door_window_sensor_158d0001de5d8a",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001de5d8a"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001fa27b1",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001fa27b1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.wall_switch_right_158d00016d97cf",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "channel_1158d00016d97cf"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d000103128c",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d000103128c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001032eed",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001032eed"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001e19d24",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001e19d24"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001dae60a",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001dae60a"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.plug_158d0001ded208",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0001ded208"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.wall_switch_left_158d00016d97cf",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "channel_0158d00016d97cf"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.gateway_light_286c0785f3ec",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "rgb286c0785f3ec"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d0001fa9829",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d0001fa9829"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_158d0001e53b7d",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "lux158d0001e53b7d"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d000201831b",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d000201831b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_158d0002236a55",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "lux158d0002236a55"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pressure_158d000201831b",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "pressure158d000201831b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_158d000224f5a5",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "lux158d000224f5a5"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pressure_158d0001f536a4",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "pressure158d0001f536a4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d0001fa9d44",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d0001fa9d44"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pressure_158d0001fa9829",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "pressure158d0001fa9829"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d0001f536a4",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d0001f536a4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d0001fa9829",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d0001fa9829"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_158d0001e5226b",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "lux158d0001e5226b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_286c0785f3ec",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "illumination286c0785f3ec"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d0001fa9d44",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d0001fa9d44"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.temperature_158d000201831b",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "temperature158d000201831b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.humidity_158d0001f536a4",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "humidity158d0001f536a4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.pressure_158d0001fa9d44",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "pressure158d0001fa9d44"
+            },
+            {
+                "config_entry_id": "ebdafbb65a0d4497ac717bafffe6b109",
+                "device_id": "45d968a6c766482c8e2a4b254d2abeee",
+                "disabled_by": null,
+                "entity_id": "media_player.mt_martha_google_home",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "474d8fcc-db61-bd5a-c324-e4dae89e85cd"
+            },
+            {
+                "config_entry_id": "ebdafbb65a0d4497ac717bafffe6b109",
+                "device_id": "af40951034e14b94a1652e772953455d",
+                "disabled_by": null,
+                "entity_id": "media_player.mt_martha_tv",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "8dd75cfb-bec8-ed08-8247-1995d615cbd0"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "d169448ddf424ee0be9fe941142da7af",
+                "disabled_by": null,
+                "entity_id": "light.hue_color_lamp_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:07:e7:42-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "54553898f2bc4692b0e67390283feacc",
+                "disabled_by": null,
+                "entity_id": "light.hue_white_lamp_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:02:7d:8c:9a-0b"
+            },
+            {
+                "config_entry_id": "1c8e41f277f74d6094a24650c135745c",
+                "device_id": "4f21a92123964cf79130aa4f7ff5c1f0",
+                "disabled_by": null,
+                "entity_id": "light.hue_color_spot_1",
+                "name": null,
+                "platform": "hue",
+                "unique_id": "00:17:88:01:04:54:a1:7f-0b"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d0002371f2f",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0002371f2f"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.motion_sensor_158d0002371f57",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "status158d0002371f57"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_158d0002371f57",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "lux158d0002371f57"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.illumination_158d0002371f2f",
+                "name": null,
+                "platform": "xiaomi_aqara",
+                "unique_id": "lux158d0002371f2f"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

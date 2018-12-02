@@ -26,33 +26,36 @@
 #################################
        
   night_hallway_timer_off:
-    alias: "Turn off triggered night light after 1 minutes"
+    alias: "Turn off triggered night light after 6 minutes"
     sequence:
       - delay:
-          minutes: 1
+          minutes: 3
       - service: light.turn_off
         data:
-          entity_id: light.hallway
+          entity_id: light.hallway_1
+      - service: light.turn_off
+        data:
+          entity_id: light.hallway_2
           
   night_upstairs_hallway_timer_off:
-    alias: "Turn off triggered night light after 1 minutes"
+    alias: "Turn off triggered night light after 3 minutes"
     sequence:
       - delay:
-          minutes: 2
+          minutes: 3
       - service: light.turn_off
         data:
           entity_id: light.upstairs_hallway
           
   night_stairway_timer_off:
-    alias: "Turn off triggered night light after 1 minutes"
+    alias: "Turn off triggered night light after 3 minutes"
     sequence:
       - delay:
-          minutes: 1
+          minutes: 3
       - service: light.turn_off
         data:
           entity_id: light.stairway_1
+      - service: light.turn_off
+        data:
+          entity_id: light.hue_color_spot_1
 
-      # - service: light.turn_off
-        # data:
-          # entity_id: light.stairway_2
 

@@ -1,0 +1,92 @@
+#################################
+###                           ###
+###          UPSTAIRS         ###
+###                           ###
+#################################
+
+#################################
+###         SLEEP MODE        ###
+#################################
+#  - alias: Upstairs Motion Sleep On
+#    trigger:
+#      platform: state
+#      entity_id: binary_sensor.motion_sensor_158d0001e53b7d
+#      to: 'on'
+#    condition:
+#      - condition: state
+#        entity_id: input_boolean.mode_sleep
+#        state: 'on'
+#    action:
+#      - service: script.turn_on
+#        entity_id: script.night_scene
+#        data:
+#          variables:
+#            scene: 'scene.up_hall_dim'
+#            off_script: 'script.night_upstairs_hallway_timer_off'
+            
+  - alias: Upstairs Light Motion
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001e53b7d
+      from: 'off'
+      to: 'on'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_sleep
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_night
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'off'
+    action:
+      - service: scene.turn_on
+        entity_id: scene.up_hall_dim
+      - wait_template: "{% if states.binary_sensor.motion_sensor_158d0001e53b7d.attributes['No motion since'] | int >= 180 and states.binary_sensor.motion_sensor_158d0001e53b7d.state == 'off' %}True{% else %}False{% endif %}"
+      - service: light.turn_off
+        entity_id: light.upstairs_hallway
+            
+#################################
+###         NIGHT MODE        ###
+#################################
+#  - alias: Upstairs Motion On
+#    trigger:
+#      platform: state
+#      entity_id: binary_sensor.motion_sensor_158d0001e53b7d
+#      to: 'on'
+#    condition:
+#      - condition: state
+#        entity_id: input_boolean.mode_sleep
+#        state: 'off'
+#    action:
+#      - service: script.turn_on
+#        entity_id: script.night_scene
+#        data:
+#          variables:
+#            scene: 'scene.up_hall_normal'
+#            off_script: 'script.night_upstairs_hallway_timer_off'
+
+
+  - alias: Upstairs Light Motion
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001e53b7d
+      from: 'off'
+      to: 'on'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_sleep
+        state: 'off'
+      - condition: state
+        entity_id: input_boolean.mode_night
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'off'
+    action:
+      - service: scene.turn_on
+        entity_id: scene.up_hall_normal
+      - wait_template: "{% if states.binary_sensor.motion_sensor_158d0001e53b7d.attributes['No motion since'] | int >= 180 and states.binary_sensor.motion_sensor_158d0001e53b7d.state == 'off' %}True{% else %}False{% endif %}"
+      - service: light.turn_off
+        entity_id: light.upstairs_hallway

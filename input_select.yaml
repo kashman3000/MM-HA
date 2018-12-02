@@ -1,0 +1,44 @@
+#################################
+###      LIGHT SCENES         ###
+#################################
+
+  family_room:
+    name: Family room lights 
+    options:
+     - "Off"
+     - Normal
+     - Movie
+     - Relax
+     - Entertain
+     - Night
+    icon: mdi:lightbulb-on
+  hallway:
+    name: Hallway lights
+    options:
+     - "Off"
+     - Normal
+     - Basic
+     - Entertain
+     - Night
+    icon: mdi:lightbulb-on
+    initial: "Off"
+  dining_room:
+    name: Dining room lights 
+    options:
+     - "Off"
+     - Normal
+     - Relax
+     - Entertain
+     - Night
+    icon: mdi:lightbulb-on
+    initial: "Off"
+  kitchen:
+    name: Kitchen lights 
+    options:
+     - "Off"
+     - Normal
+     - Dinner time
+     - Board Game
+     - Night
+    initial: "Off"
+    icon: mdi:lightbulb-on

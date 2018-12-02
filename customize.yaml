@@ -48,6 +48,10 @@
     friendly_name: Stairwell Motion    
   binary_sensor.motion_sensor_158d000224f5a5:
     friendly_name: Family Room Motion
+  binary_sensor.motion_sensor_158d0002371f2f:
+    friendly_name: Sitting Room Motion
+  binary_sensor.motion_sensor_158d0002371f57:
+    friendly_name: Dining Room Motion
     
 ### ILLUMINATION SENSORS
   sensor.illumination_158d0001e5226b:
