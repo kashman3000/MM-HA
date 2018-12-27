@@ -1,0 +1,15 @@
+2018-12-28 08:34:00 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=5 from 2018-12-27 08:22:32.968156)
+2018-12-28 08:34:01 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39
+2018-12-28 08:34:01 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39. Retrying in 2 seconds
+2018-12-28 08:34:04 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39
+2018-12-28 08:34:04 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39. Retrying in 4 seconds
+2018-12-28 08:34:09 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39
+2018-12-28 08:34:09 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39. Retrying in 8 seconds
+2018-12-28 08:34:18 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39
+2018-12-28 08:34:18 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39. Retrying in 16 seconds
+2018-12-28 08:34:35 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39
+2018-12-28 08:34:35 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39. Retrying in 32 seconds
+2018-12-28 08:35:08 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39
+2018-12-28 08:35:08 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39. Retrying in 64 seconds
+2018-12-28 08:36:13 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39
+2018-12-28 08:36:13 ERROR (MainThread) [homeassistant.components.hue] Error connecting to the Hue bridge at 192.168.86.39. Retrying in 128 seconds

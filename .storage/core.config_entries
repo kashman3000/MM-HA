@@ -1,0 +1,30 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "cast",
+                "entry_id": "95fbb5b6f02a4d8cb914afbe3fce7c20",
+                "source": "discovery",
+                "title": "Google Cast",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "bridge_id": "001788FFFE2D2D01",
+                    "host": "192.168.86.39",
+                    "username": "HVfxE5gsIpuNiAiQnU34LwVXL-botMEd4vXZkVdX"
+                },
+                "domain": "hue",
+                "entry_id": "ae487bec98a04be9bbb80745ba4fc4b0",
+                "source": "discovery",
+                "title": "Home Lights",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

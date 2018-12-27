@@ -1,0 +1,355 @@
+{
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "95fbb5b6f02a4d8cb914afbe3fce7c20"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "ee9ca3b1b13b4eda936c3327f4f46340",
+                "identifiers": [
+                    [
+                        "cast",
+                        "474d8fccdb61bd5ac324e4dae89e85cd"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Mini",
+                "name": "Mt Martha Google Home",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "95fbb5b6f02a4d8cb914afbe3fce7c20"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "9589b420d74b48c6957e279b0ffc61df",
+                "identifiers": [
+                    [
+                        "cast",
+                        "8dd75cfbbec8ed0882471995d615cbd0"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Chromecast",
+                "name": "Mt Martha TV",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "00:17:88:2d:2d:01"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "identifiers": [
+                    [
+                        "hue",
+                        "001788FFFE2D2D01"
+                    ]
+                ],
+                "manufacturer": "Signify",
+                "model": "BSB002",
+                "name": "Home Lights",
+                "sw_version": "1810251352"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "5512bda2bf404898b0d08eddeb4680cd",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:10:28:8d:15-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Hallway 1",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "a0ecec81637c497c870bd1b0241bdb0d",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:30:a1:7e-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Dining Lamp",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "af44178a95064c1895c5e75cab0c7fa6",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:31:2b:fa-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Family Lamp",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "8a50b0aa7ff64cd5a766d40afbcfafbd",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:0a:d3:47-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Hallway 2",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "979abc9579c24b6684cbe380f042a8aa",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:07:e7:42-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "TV Lamp",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "8a92626936b74f559338ba7aaac6f59a",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:7d:8c:9a-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue white lamp",
+                "name": "Kitchen 1",
+                "sw_version": "1.46.13_r26312"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "5dbf98b70c9d43019cf8cae910529ec4",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:0b:1d:0f-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Family Back 1",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "535cdcb53f6541309a86d9b3e1f6f340",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:0b:1d:0a-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Family Back 3",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "bf7f7ca5fbf0474f836bc25ee07a3794",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:31:21:64-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Upstairs Hallway",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "2c879d3d4e4f47fa9f672278a9268a36",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:0b:1c:7a-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Family Front 1",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "7a50e1a2a7bc4b1f816754e91e56585e",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:04:54:a1:7f-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Stairway 2",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "dbb4e15554e1421d9b184c56a18af3e5",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:0b:1b:23-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Family Back 2",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "20b13315056741638ed5a36fef140787",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:0b:1c:70-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Family Front 2",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "74825431c2214803aa1f601195a8098e",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:0b:1b:fc-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Stairway 1",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "0c89ada2f65246edbcae124f5d74c3ee",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:10:28:8d:05-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color lamp",
+                "name": "Dining Room",
+                "sw_version": "5.127.1.26420"
+            },
+            {
+                "config_entries": [
+                    "ae487bec98a04be9bbb80745ba4fc4b0"
+                ],
+                "connections": [],
+                "hub_device_id": "8a116c091f6a4ca1931f5d17a8386a0f",
+                "id": "8ed030a66cf646419339c50fd4e36822",
+                "identifiers": [
+                    [
+                        "hue",
+                        "00:17:88:01:02:0b:1b:fb-0b"
+                    ]
+                ],
+                "manufacturer": "Philips",
+                "model": "Hue color spot",
+                "name": "Family Front 3",
+                "sw_version": "5.127.1.26420"
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}
