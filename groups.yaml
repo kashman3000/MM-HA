@@ -1,0 +1,198 @@
+#################################
+###       DEFAULT             ###
+#################################
+
+  default_view:
+    view: yes
+    icon: mdi:home
+    entities:
+      - group.house
+      - group.switches
+      - group.scenes_select
+      - group.weather
+
+  house:
+    view: no
+    name: Current Overview
+    entities:
+      - sun.sun
+      - alarm_control_panel.house_alarm
+      - sensor.house_occupied
+      - sensor.air_pollution
+      - sensor.bom_rain_today
+
+  scenes_select:
+    view: no
+    name: Light Control
+    entities:
+      - input_select.family_room
+      - input_select.hallway
+      - input_select.kitchen
+      - input_select.dining_room
+
+      
+  weather:
+    view: no
+    name: Weather and Temperatures
+    entities:
+      - sensor.temperature_158d0001f536a4
+      - sensor.temperature_158d0001fa9829
+      - sensor.temperature_158d0001fa9d44
+      - sensor.temperature_158d000201831b
+      - sensor.humidity_158d0001f536a4
+      - sensor.humidity_158d0001fa9829
+      - sensor.humidity_158d0001fa9d44
+      - sensor.humidity_158d000201831b
+
+      
+  motion:
+    view: no
+    name: Household Motion
+    entities:
+      - binary_sensor.motion_sensor_158d0001e5226b
+      - binary_sensor.motion_sensor_158d0001e53b7d
+      - binary_sensor.motion_sensor_158d0002236a55
+      - binary_sensor.motion_sensor_158d000224f5a5
+      - binary_sensor.motion_sensor_158d0002371f2f
+      - binary_sensor.motion_sensor_158d0002371f57
+
+
+      
+  lights:
+    view: no
+    name: Household Lights
+    entities:
+      - light.dining_lamp
+      - light.dining_room
+      - light.family_back_1
+      - light.family_back_2
+      - light.family_back_3
+      - light.family_front_1
+      - light.family_front_2
+      - light.family_front_3
+      - light.family_lamp
+      - light.kitchen
+      - light.gateway_light_286c0785f3ec
+      - light.hallway
+      - light.second_floor_hallway
+      - light.stairs
+      - light.upstairs_hallway
+      
+#################################
+###       SECEURITY           ###
+#################################
+
+  security:
+    view: no
+    icon: mdi:security-home
+    entities:
+      - group.display_away
+
+      
+  display_away:
+    name: Away Presence Simulation
+    view: no
+    icon: mdi:alert
+    entities:
+      - input_boolean.mode_away
+      - switch.plug_158d0001032eed
+      - switch.plug_158d000103128c
+      - switch.plug_158d0001dae60a
+      - switch.wall_switch_left_158d00016d97cf
+      
+#################################
+###       SETTINGS            ###
+#################################
+
+  settings:
+    view: yes
+    icon: mdi:alert
+    entities:
+      - group.settings_tab
+      - group.all_lights
+      - group.power
+      - group.doors
+      - group.family
+      - group.motion
+
+
+      
+  settings_tab:
+    view: no
+    name: Household Settings
+    entities:
+      - input_boolean.mode_away
+      - input_boolean.mode_night
+      - input_boolean.mode_sleep
+      - input_boolean.notifications
+      - input_boolean.welcome_home
+      - input_boolean.morning_first
+      - input_number.light_timeout
+      - media_player.mt_martha_google_home
+      
+  all_lights:
+    view: no
+    name: All Household Lights
+    entities:
+      - light.dining_lamp
+      - light.dining_room
+      - light.family_back_1
+      - light.family_back_2
+      - light.family_back_3
+      - light.family_front_1
+      - light.family_front_2
+      - light.family_front_3
+      - light.family_lamp
+      - light.hue_color_lamp_1
+      - light.kitchen
+      - light.gateway_light_286c0785f3ec
+      - light.hallway_1
+      - light.hallway_2
+      - light.stairs
+      - light.upstairs_hallway
+      - switch.plug_158d000103128c
+      - switch.plug_158d0001dae60a
+      - switch.wall_switch_left_158d00016d97cf
+      - switch.wall_switch_right_158d00016d97cf
+      - switch.mt_m_living_room_light
+      
+  family:
+    view: no
+    name: Family
+    entities:
+      - input_boolean.cathy_wifi
+      - input_boolean.cathy_tab_wifi
+      - input_boolean.guy_wifi
+      - input_boolean.guy_tab_wifi
+      - input_boolean.james_wifi
+      - input_boolean.sam_wifi
+      - input_boolean.adam_wifi
+      - input_boolean.sarah_wifi
+    
+  power:
+    view: no
+    name: Power Switches
+    entities:
+      - switch.plug_158d000103128c
+      - switch.plug_158d0001032eed
+      - switch.plug_158d0001dae60a
+      - switch.plug_158d0001ded208
+      - switch.plug_158d0001e19d24
+      - switch.plug_158d0001fa27b1            
+      
+  switches:
+    view: no
+    name: Household Switches
+    entities:
+      - switch.wemo_light_switch
+      - switch.wall_switch_left_158d0001a41a87
+      - switch.wall_switch_right_158d0001a41a87
+      
+  doors:
+    view: no
+    name: Household Doors
+    entities:
+      - binary_sensor.door_window_sensor_158d0001833cb2
+      - binary_sensor.door_window_sensor_158d0001876669
+      - binary_sensor.door_window_sensor_158d0001de5d8a      
+    

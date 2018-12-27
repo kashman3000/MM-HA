@@ -1,0 +1,58 @@
+
+#################################
+###                           ###
+###       DINING ROOM         ###
+###                           ###
+#################################
+
+#################################
+###         SLEEP MODE        ###
+#################################
+  - alias:  Hallway Motion Sleep ON
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_sensor_158d0002371f57
+      from: 'off'
+      to: 'on'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_sleep
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_night
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'off'
+    action:
+      - service: scene.turn_on
+        entity_id: scene.dining_dim
+      - wait_template: "{% if states.binary_sensor.motion_sensor_158d0002371f57.attributes['No motion since'] | int >= 180 and states.binary_sensor.motion_sensor_158d0002371f57.state == 'off' %}True{% else %}False{% endif %}"
+      - service: light.turn_off
+        entity_id: light.dining_room
+
+#################################
+###         NIGHT MODE        ###
+#################################
+  - alias:  Dining Motion ON
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_sensor_158d0002371f57
+      from: 'off'
+      to: 'on'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_sleep
+        state: 'off'
+      - condition: state
+        entity_id: input_boolean.mode_night
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'off'
+    action:
+      - service: scene.turn_on
+        entity_id: scene.dining_normal
+      - wait_template: "{% if states.binary_sensor.motion_sensor_158d0002371f57.attributes['No motion since'] | int >= 180 and states.binary_sensor.motion_sensor_158d0002371f57.state == 'off' %}True{% else %}False{% endif %}"
+      - service: light.turn_off
+        entity_id: light.dining_room

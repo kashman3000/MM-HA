@@ -1,0 +1,208 @@
+light.family_lamp:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:31:2b:fa-0b
+light.hallway_2:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:0a:d3:47-0b
+light.family_front_1:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:0b:1c:7a-0b
+light.dining_room:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:28:8d:05-0b
+light.stairway_1:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:0b:1b:fc-0b
+light.family_back_2:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:0b:1b:23-0b
+light.upstairs_hallway:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:31:21:64-0b
+light.family_back_3:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:0b:1d:0a-0b
+light.hallway_1:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:28:8d:15-0b
+light.family_front_2:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:0b:1c:70-0b
+light.family_front_3:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:0b:1b:fb-0b
+light.family_back_1:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:0b:1d:0f-0b
+light.dining_lamp:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:30:a1:7e-0b
+switch.mt_m_living_room_light:
+  name:
+  platform: wemo
+  unique_id: 221324K1300433
+binary_sensor.switch_158d00012967ff:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00012967ff
+binary_sensor.door_window_sensor_158d0001833cb2:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001833cb2
+binary_sensor.door_window_sensor_158d0001876669:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001876669
+binary_sensor.motion_sensor_158d000224f5a5:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000224f5a5
+binary_sensor.switch_158d000187075e:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000187075e
+binary_sensor.motion_sensor_158d0001e5226b:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001e5226b
+binary_sensor.motion_sensor_158d0002236a55:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0002236a55
+binary_sensor.motion_sensor_158d0001e53b7d:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001e53b7d
+binary_sensor.door_window_sensor_158d0001de5d8a:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001de5d8a
+switch.plug_158d0001fa27b1:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001fa27b1
+switch.wall_switch_right_158d00016d97cf:
+  name:
+  platform: xiaomi_aqara
+  unique_id: channel_1158d00016d97cf
+switch.plug_158d000103128c:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000103128c
+switch.plug_158d0001032eed:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001032eed
+switch.plug_158d0001e19d24:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001e19d24
+switch.plug_158d0001dae60a:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001dae60a
+switch.plug_158d0001ded208:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001ded208
+switch.wall_switch_left_158d00016d97cf:
+  name:
+  platform: xiaomi_aqara
+  unique_id: channel_0158d00016d97cf
+light.gateway_light_286c0785f3ec:
+  name:
+  platform: xiaomi_aqara
+  unique_id: rgb286c0785f3ec
+sensor.humidity_158d0001fa9829:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001fa9829
+sensor.illumination_158d0001e53b7d:
+  name:
+  platform: xiaomi_aqara
+  unique_id: lux158d0001e53b7d
+sensor.humidity_158d000201831b:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d000201831b
+sensor.illumination_158d0002236a55:
+  name:
+  platform: xiaomi_aqara
+  unique_id: lux158d0002236a55
+sensor.pressure_158d000201831b:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d000201831b
+sensor.illumination_158d000224f5a5:
+  name:
+  platform: xiaomi_aqara
+  unique_id: lux158d000224f5a5
+sensor.pressure_158d0001f536a4:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001f536a4
+sensor.temperature_158d0001fa9d44:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001fa9d44
+sensor.pressure_158d0001fa9829:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001fa9829
+sensor.temperature_158d0001f536a4:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001f536a4
+sensor.temperature_158d0001fa9829:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001fa9829
+sensor.illumination_158d0001e5226b:
+  name:
+  platform: xiaomi_aqara
+  unique_id: lux158d0001e5226b
+sensor.illumination_286c0785f3ec:
+  name:
+  platform: xiaomi_aqara
+  unique_id: illumination286c0785f3ec
+sensor.humidity_158d0001fa9d44:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001fa9d44
+sensor.temperature_158d000201831b:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d000201831b
+sensor.humidity_158d0001f536a4:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001f536a4
+sensor.pressure_158d0001fa9d44:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001fa9d44
+media_player.mt_martha_google_home:
+  name:
+  platform: cast
+  unique_id: 474d8fcc-db61-bd5a-c324-e4dae89e85cd
+media_player.mt_martha_tv:
+  name:
+  platform: cast
+  unique_id: 8dd75cfb-bec8-ed08-8247-1995d615cbd0
+light.hue_color_lamp_1:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:07:e7:42-0b

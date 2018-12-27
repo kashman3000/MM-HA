@@ -1,0 +1,276 @@
+#################################
+###      LIGHT SCENES         ###
+#################################
+
+
+######  FAMILY ROOM   ###########
+
+  - name: family_off
+    entities:
+      light.family_front_1:
+        state: off
+      light.family_front_2:
+        state: off
+      light.family_front_3:
+        state: off
+      light.family_back_1:
+        state: off
+      light.family_back_2:
+        state: off
+      light.family_back_3:
+        state: off
+      light.family_lamp:
+        state: off
+
+  - name: family_normal
+    entities:
+      light.family_front_1:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.457, 0.41 ]
+      light.family_front_2:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.457, 0.41 ]
+      light.family_front_3:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.457, 0.41 ]
+      light.family_back_1:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.457, 0.41 ]
+      light.family_back_2:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.457, 0.41 ]
+      light.family_back_3:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.457, 0.41 ]
+      light.family_lamp:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.457, 0.41 ]
+      light.hue_color_lamp_1:
+        state: off
+
+  - name: family_movie
+    entities:
+      light.family_front_1:
+        state: off
+      light.family_front_2:
+        state: off
+      light.family_front_3:
+        state: off
+      light.family_back_1:
+        state: off
+      light.family_back_2:
+        state: off
+      light.family_back_3:
+        state: off
+      light.family_lamp:
+        state: on
+        transition: 1
+        brightness: 254
+        xy_color: [ 0.459, 0.408 ]
+      light.hue_color_lamp_1:
+        state: off
+        
+  - name: family_relax
+    entities:
+      light.family_front_1:
+        state: on
+        transition: 1
+        brightness: 125
+        xy_color: [ 0.459, 0.408 ]
+      light.family_front_2:
+        state: on
+        transition: 1
+        brightness: 125
+        xy_color: [ 0.459, 0.408 ]
+      light.family_front_3:
+        state: on
+        transition: 1
+        brightness: 125
+        xy_color: [ 0.459, 0.408 ]
+      light.family_back_1:
+        state: on
+        transition: 1
+        brightness: 125
+        xy_color: [ 0.459, 0.408 ]
+      light.family_back_2:
+        state: on
+        transition: 1
+        brightness: 125
+        xy_color: [ 0.459, 0.408 ]
+      light.family_back_3:
+        state: on
+        transition: 1
+        brightness: 125
+        xy_color: [ 0.459, 0.408 ]
+      light.family_lamp:
+        state: off
+      light.hue_color_lamp_1:
+        state: off
+        
+  - name: family_entertain
+    entities:
+      light.family_front_1:
+        state: on
+        transition: 1
+        brightness: 77
+        xy_color: [ 0.459, 0.408 ]
+      light.family_front_2:
+        state: on
+        transition: 1
+        brightness: 77
+        xy_color: [ 0.459, 0.408 ]
+      light.family_front_3:
+        state: on
+        transition: 1
+        brightness: 77
+        xy_color: [ 0.459, 0.408 ]
+      light.family_back_1:
+        state: on
+        transition: 1
+        brightness: 77
+        xy_color: [ 0.459, 0.408 ]
+      light.family_back_2:
+        state: on
+        transition: 1
+        brightness: 77
+        xy_color: [ 0.459, 0.408 ]
+      light.family_back_3:
+        state: on
+        transition: 1
+        brightness: 77
+        xy_color: [ 0.459, 0.408 ]
+      light.family_lamp:
+        state: on
+        transition: 1
+        brightness: 77
+        xy_color: [ 0.459, 0.408 ]
+      light.hue_color_lamp_1:
+        state: on
+        transition: 1
+        brightness: 77
+        xy_color: [ 0.459, 0.408 ]
+        
+  - name: family_night
+    entities:
+      light.family_front_1:
+        state: off
+      light.family_front_2:
+        state: off
+      light.family_front_3:
+        state: off
+      light.family_back_1:
+        state: off
+      light.family_back_2:
+        state: off
+      light.family_back_3:
+        state: off
+      light.family_lamp:
+        state: on
+        transition: 1
+        brightness: 77
+        xy_color: [ 0.5926, 0.3814 ]
+      light.hue_color_lamp_1:
+        state: off
+
+
+#################################
+###    AUTOMATED SCENES       ###
+#################################
+
+  - name: hall_dim
+    entities:
+      light.hallway_1:
+        state: on
+        transition: 1
+        brightness: 1
+        xy_color: [ 0.5926, 0.3814 ]
+      light.hallway_2:
+        state: on
+        transition: 1
+        brightness: 1
+        xy_color: [ 0.5926, 0.3814 ]
+        
+  - name: hall_normal
+    entities:
+      light.hallway_1:
+        state: on
+        transition: 2
+        brightness: 245
+        xy_color: [ 0.4448, 0.4066 ]
+      light.hallway_2:
+        state: on
+        transition: 2
+        brightness: 245
+        xy_color: [ 0.4448, 0.4066 ]
+        
+  - name: up_hall_dim
+    entities:
+      light.upstairs_hallway:
+        state: on
+        transition: 1
+        brightness: 1
+        xy_color: [ 0.5926, 0.3814 ]
+        
+  - name: up_hall_normal
+    entities:
+      light.upstairs_hallway:
+        state: on
+        transition: 2
+        brightness: 245
+        xy_color: [ 0.4448, 0.4066 ]
+        
+  - name: dining_dim
+    entities:
+      light.dining_room:
+        state: on
+        transition: 1
+        brightness: 1
+        xy_color: [ 0.5926, 0.3814 ]
+        
+  - name: dining_normal
+    entities:
+      light.dining_room:
+        state: on
+        transition: 2
+        brightness: 245
+        xy_color: [ 0.4448, 0.4066 ]
+        
+  - name: stairway_dim
+    entities:
+      light.stairway_1:
+        state: on
+        transition: 1
+        brightness: 1
+        xy_color: [ 0.5926, 0.3814 ]
+      light.hue_color_spot_1:
+        state: on
+        transition: 1
+        brightness: 1
+        xy_color: [ 0.5926, 0.3814 ]
+        
+  - name: stairway_normal
+    entities:
+      light.stairway_1:
+        state: on
+        transition: 2
+        brightness: 245
+        xy_color: [ 0.4448, 0.4066 ]
+      light.hue_color_spot_1:
+        state: on
+        transition: 2
+        brightness: 245
+        xy_color: [ 0.4448, 0.4066 ]

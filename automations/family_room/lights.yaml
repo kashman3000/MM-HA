@@ -1,0 +1,66 @@
+#################################
+###                           ###
+###      FAMILY ROOM          ###
+###                           ###
+#################################
+
+#################################
+###     MORNING WELCOME       ###
+#################################
+  - alias: Morning Welcome
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_sensor_158d000224f5a5
+      to: 'on'
+    condition:
+      condition: state
+      entity_id: input_boolean.morning_first
+      state: 'on'
+    action:
+      - service: scene.turn_on
+        entity_id: scene.family_movie
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.morning_first
+        
+#################################
+###         MEDIA PLAY        ###
+#################################
+  # - alias: Chromecast Play
+    # trigger:
+      # platform: state
+      # entity_id: media_player.mt_martha_tv
+      # to: 'playing'
+    # condition:
+      # condition: state
+      # entity_id: sun.sun
+      # state: 'below_horizon'
+    # action:
+      # - service: scene.turn_on
+        # entity_id: scene.family_movie
+
+  # - alias: Chromecast Pause
+    # trigger:
+      # platform: state
+      # entity_id: media_player.mt_martha_tv
+      # to: 'paused'
+    # condition:
+      # condition: state
+      # entity_id: sun.sun
+      # state: 'below_horizon'
+    # action:
+      # - service: scene.turn_on
+        # entity_id: scene.family_entertain
+        
+  # - alias: Chromecast Stop
+    # trigger:
+      # platform: state
+      # entity_id: media_player.mt_martha_t
+      # from: 'playing'
+      # to: 'off'
+    # condition:
+      # condition: state
+      # entity_id: sun.sun
+      # state: 'below_horizon'
+    # action:
+      # - service: scene.turn_on
+        # entity_id: scene.family_normal

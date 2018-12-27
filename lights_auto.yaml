@@ -1,0 +1,23 @@
+  - alias: Family Room Light Scene
+    trigger:
+      - platform: state
+        entity_id: input_select.family_room
+    action:
+      - service: scene.turn_on
+        data_template:
+          entity_id: >
+            {% if is_state("input_select.family_room", "Off") %}
+              scene.family_off
+            {%-elif is_state("input_select.family_room", "Normal") %}
+              scene.family_normal
+            {%-elif is_state("input_select.family_room", "Movie") %}
+              scene.family_movie
+            {%-elif is_state("input_select.family_room", "Relax") %}
+              scene.family_relax
+            {%-elif is_state("input_select.family_room", "Entertain") %}
+              scene.family_etertain
+            {%-elif is_state("input_select.family_roomr", "Night") %}
+              scene.family_night
+            {% else %}
+              "None"
+            {% endif %}

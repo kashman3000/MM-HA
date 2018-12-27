@@ -1,0 +1,229 @@
+#################################
+###                           ###
+###    SECURITY AUTOMATIONS   ###
+###                           ###
+#################################
+
+#################################
+###      GENERAL ALERTS       ###
+#################################
+  - alias: MM Door Bell
+    trigger:
+      platform: event
+      event_type: click
+      event_data:
+        entity_id: binary_sensor.switch_158d000187075e
+        click_type: single
+    action:
+      - service: script.turn_on
+        entity_id: script.notify_all
+        data:
+          variables:
+            title: 'MM Door Bell'
+            message: 'Someone is at the door!'
+
+#################################
+###         AWAY MODE         ###
+#################################
+  - alias: "Away Mode On"
+    trigger:
+      platform: state
+      entity_id: sensor.house_occupied
+      to: 'unoccupied'
+    action:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.mode_away
+        
+  - alias: "Away Mode Off"
+    trigger:
+      platform: state
+      entity_id: sensor.house_occupied
+      to: 'occupied'
+    action:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.mode_away
+
+            
+#################################
+###    SIMULATED PRESENCE     ###
+#################################
+
+##### Turn off simulation when arriving         
+  - alias: "Away Mode Alarm Off"
+    trigger:
+      platform: state
+      entity_id: input_boolean.mode_away
+      to: 'off'
+    action:
+      - service: switch.turn_off
+        entity_id: switch.plug_158d0001032eed
+
+##### RANDOMISED Morning
+  - alias: "Away Radio Presence morning"
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'above_horizon'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'on'
+    action:
+      - delay: '0{{ range(0,2) | random | int }}:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: switch.turn_on
+        data:
+          entity_id: switch.plug_158d0001032eed
+      - delay: '0{{ range(0,3) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: switch.turn_off
+        entity_id: switch.plug_158d0001032eed
+      - delay: '0{{ range(0,2) | random | int }}:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: switch.turn_on
+        data:
+          entity_id: switch.plug_158d0001032eed
+      - delay: '0{{ range(0,3) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: switch.turn_off
+        entity_id: switch.plug_158d0001032eed
+        
+##### RANDOMISED Evening         
+  - alias: "Away Radio Presence evening"
+    trigger:
+      platform: time
+      at: '13:00:00'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'on'
+    action:
+      - delay: '0{{ range(0,2) | random | int }}:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: switch.turn_on
+        data:
+          entity_id: switch.plug_158d0001032eed
+      - delay: '0{{ range(0,3) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: switch.turn_off
+        entity_id: switch.plug_158d0001032eed
+        
+  - alias: "Office Lamp Presence evening"
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'below_horizon'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'on'
+    action:
+      - delay: '00:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: switch.turn_on
+        data:
+          entity_id: switch.plug_158d0001dae60a
+      - delay: '0{{ range(0,2) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: switch.turn_off
+        entity_id: switch.plug_158d0001dae60a
+      - delay: '00:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: switch.turn_on
+        data:
+          entity_id: switch.plug_158d0001dae60a
+      - delay: '0{{ range(0,2) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: switch.turn_off
+        entity_id: switch.plug_158d0001dae60a
+        
+  - alias: "Sitting Room Presence evening"
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'below_horizon'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'on'
+    action:
+      - delay: '00:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: switch.turn_on
+        data:
+          entity_id: switch.mt_m_living_room_light
+      - delay: '0{{ range(0,1) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: switch.turn_off
+        entity_id: switch.mt_m_living_room_light
+      - delay: '00:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: switch.turn_on
+        data:
+          entity_id: switch.mt_m_living_room_light
+      - delay: '0{{ range(0,2) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: switch.turn_off
+        entity_id: switch.mt_m_living_room_light
+        
+  - alias: "Meals Room Presence evening"
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'below_horizon'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'on'
+    action:
+      - delay: '00:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: switch.turn_on
+        data:
+          entity_id: switch.wall_switch_left_158d00016d97cf
+      - delay: '0{{ range(0,1) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: switch.turn_off
+        entity_id: switch.wall_switch_left_158d00016d97cf
+      - delay: '00:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: switch.turn_on
+        data:
+          entity_id: switch.wall_switch_left_158d00016d97cf
+      - delay: '0{{ range(0,2) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: switch.turn_off
+        entity_id: switch.wall_switch_left_158d00016d97cf
+        
+        
+  - alias: "Kitchen Presence evening"
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      to: 'below_horizon'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'on'
+    action:
+      - delay: '00:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: light.turn_on
+        data:
+          entity_id: light.kitchen
+      - delay: '0{{ range(0,1) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: light.turn_off
+        entity_id: light.kitchen
+      - delay: '00:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+      - service: light.turn_on
+        data:
+          entity_id: light.kitchen
+      - delay: '0{{ range(0,2) | random | int }}:{{ range(20,59) | random | int }}:00'
+      - service: light.turn_off
+        entity_id: light.kitchen
+           
+##### SAMPLE REANDOMISED LIGHTS AUTOMATION           
+# - alias: "Away lights veranda"
+  # trigger:
+    # - platform: numeric_state
+      # entity_id: sun.sun
+      # value_template: '{{ state.attributes.elevation }}'
+      # below: -4
+  # condition:
+    # - condition: state
+      # entity_id: script.away_48
+      # state: 'off'
+      # for:
+        # minutes: 1
+  # action:
+    # - delay: '00:{{ range(10,59) | random | int }}:{{ range(20,59) | random | int }}'
+    # - service: homeassistant.turn_on
+      # data:
+        # entity_id: light.veranda
+        # transition: 10
+        # brightness: 150
+    # - delay: '0{{ range(0,3) | random | int }}:{{ range(20,59) | random | int }}:00'
+    # - service: homeassistant.turn_off
+      # entity_id:
+       # - light.veranda

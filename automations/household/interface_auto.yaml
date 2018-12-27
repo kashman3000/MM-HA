@@ -1,0 +1,30 @@
+## Reset Cards to Hidden on LOAD
+  - alias: Reset not home
+    trigger:
+      - platform: homeassistant
+        event: start
+    action:
+      - service: group.set_visibility
+        entity_id: group.guy
+        data:
+          visible: False
+      - service: group.set_visibility
+        entity_id: group.cathy
+        data:
+          visible: False
+      - service: group.set_visibility
+        entity_id: group.james
+        data:
+          visible: False
+      - service: group.set_visibility
+        entity_id: group.sam
+        data:
+          visible: False
+      - service: group.set_visibility
+        entity_id: group.adam
+        data:
+          visible: False
+      - service: group.set_visibility
+        entity_id: group.sarah
+        data:
+          visible: False

@@ -1,0 +1,96 @@
+#################################
+###                           ###
+###         STAIRWELL         ###
+###                           ###
+#################################
+
+#################################
+###         SLEEP MODE        ###
+#################################
+#  - alias: Stairway Motion Sleep On
+#    trigger:
+#      platform: state
+#      entity_id: binary_sensor.motion_sensor_158d0002236a55
+#      to: 'on'
+#    condition:
+#      - condition: state
+#        entity_id: input_boolean.mode_sleep
+#        state: 'on'
+#    action:
+#      - service: script.turn_on
+#        entity_id: script.night_scene
+#        data:
+#          variables:
+#            scene: 'scene.stairway_dim'
+#            off_script: 'script.night_stairway_timer_off'
+            
+            
+  - alias:  Stairway Motion Sleep ON
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_sensor_158d0002236a55
+      from: 'off'
+      to: 'on'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_sleep
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_night
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'off'
+    action:
+      - service: scene.turn_on
+        entity_id: scene.stairway_dim
+      - wait_template: "{% if states.binary_sensor.motion_sensor_158d0002236a55.attributes['No motion since'] | int >= 180 and states.binary_sensor.motion_sensor_158d0002236a55.state == 'off' %}True{% else %}False{% endif %}"
+      - service: light.turn_off
+        entity_id: light.stairway_1
+      - service: light.turn_off
+        entity_id: light.hue_color_spot_1
+            
+#################################
+###         NIGHT MODE        ###
+#################################
+#  - alias: Stairway Motion On
+#    trigger:
+#      platform: state
+#      entity_id: binary_sensor.motion_sensor_158d0002236a55
+#      to: 'on'
+#    condition:
+#      - condition: state
+#        entity_id: input_boolean.mode_sleep
+#        state: 'off'
+#    action:
+#      - service: script.turn_on
+#        entity_id: script.night_scene
+#        data:
+#          variables:
+#            scene: 'scene.stairway_normal'
+#            off_script: 'script.night_stairway_timer_off'
+            
+  - alias:  Stairway Motion ON
+    trigger:
+      platform: state
+      entity_id: binary_sensor.motion_sensor_158d0002236a55
+      from: 'off'
+      to: 'on'
+    condition:
+      - condition: state
+        entity_id: input_boolean.mode_sleep
+        state: 'off'
+      - condition: state
+        entity_id: input_boolean.mode_night
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.mode_away
+        state: 'off'
+    action:
+      - service: scene.turn_on
+        entity_id: scene.stairway_normal
+      - wait_template: "{% if states.binary_sensor.motion_sensor_158d0002236a55.attributes['No motion since'] | int >= 180 and states.binary_sensor.motion_sensor_158d0002236a55.state == 'off' %}True{% else %}False{% endif %}"
+      - service: light.turn_off
+        entity_id: light.stairway_1
+      - service: light.turn_off
+        entity_id: light.hue_color_spot_1
